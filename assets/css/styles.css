@@ -54,6 +54,10 @@ html, body {
     width: 25%;
 }
 
+#container__left input:focus {
+    outline: none;
+}
+
 #container__left button {
     padding: 8px 25px;
     border: none;
@@ -99,8 +103,9 @@ html, body {
     }
 
     #container__left, #container__right {
-        width: 100%;
         padding: 20px 0;
+        min-height: 100vh;
+        min-width: 100vw;
     }
 
     #container__left h1 {
@@ -111,5 +116,14 @@ html, body {
     #container__left p {
         font-size: 100%;
         text-align: center;
+    }
+
+    #container__right img {
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    #container__left input {
+        width: 35%;
     }
 }
