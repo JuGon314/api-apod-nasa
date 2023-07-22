@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@100;200;300;400&display=swap');
+
+:root {
+    --pink: #e7b1e3;
+    --blue: #31569b;
+    --white: #ffffFf;
+    --black: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Victor Mono', monospace;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+#container__left, #container__right {
+    width: 50%;
+}
+
+/* Conteiner da esquerda */
+#container__left {
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#container__left img {
+    width: 40%;
+    margin: 20px 0;
+}
+
+#container__left p {
+    font-weight: 600;
+}
+
+#container__left input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 25%;
+}
+
+#container__left button {
+    padding: 8px 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Container da direita */
+#container__right {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 80%;
+    text-align: justify;
+}
+
+.nasa__title {
+    font-weight: 600;
+}
+
+.nasa__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    display: fixed;
+}
