@@ -33,6 +33,11 @@ html, body {
     gap: 15px;
 }
 
+#container__left h1 {
+    color: var(--blue);
+    font-weight: 800;
+}
+
 #container__left img {
     width: 40%;
     margin: 20px 0;
@@ -53,6 +58,13 @@ html, body {
     padding: 8px 25px;
     border: none;
     border-radius: 5px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#container__left button:hover {
+    scale: 1.1;
+    transition: 0.2s;
 }
 
 /* Container da direita */
@@ -78,4 +90,26 @@ html, body {
     align-items: center;
     border-radius: 5px;
     display: fixed;
+}
+
+/* Responsividade */
+@media (max-width: 426px) {
+    html, body {
+        display: block;
+    }
+
+    #container__left, #container__right {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    #container__left h1 {
+        font-size: 150%;
+        text-align: center;
+    }
+
+    #container__left p {
+        font-size: 100%;
+        text-align: center;
+    }
 }
